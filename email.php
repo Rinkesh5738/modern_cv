@@ -49,8 +49,8 @@ if($_POST) {
         ini_set("sendmail_from", $siteOwnersEmail); // for windows server
         $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-        if ($mail) { echo "OK"; }
-        else { echo "Something went wrong. Please try again."; }
+        if ($mail) { echo <script>alert("OK")</script>; }
+        else { echo <script>alert("Something went wrong. Please try again.")</script>; }
         
     } # end if - no validation error
 
